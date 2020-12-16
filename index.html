@@ -10,12 +10,26 @@
 		<!-- Landing! -->
 		<section>
 			<div id="landing" class="container">
-				<img id="logo" class="flex-child" src="./images/logo.png">
-				<div id="heading" class="flex-child">
-					<h2 id="info-text">Seasonal hand-made decor & more</h2>
-					<p id="by">by</p>
+				<img id="logo" src="./images/logo.png">
+				<div id="heading">
+					<h1 id="info-text">Seasonal hand-made decor & more</h1>
+					<h2 id="by">by</h2>
 					<h1 id="name">Theresa Anne Morici</h1>
-					<div id="shop-border"><a id="shop-link" href="">Store</a></div>
+					<!-- This button needs to be fixed. The outer div does not click the link,
+						user has to click the text. They should be able to click the entire button. Wrapping Divs in an anchor causes weird [ ] to appear when using
+						a border style, as well as margin issues. -->
+					<div>
+						<div class="button-outer-border">
+							<div class="button-inner-border">
+								<a id="shop-link" href="#store">Store</a>
+							</div>
+						</div>
+						<div class="button-outer-border">
+							<div class="button-inner-border">
+								<a id="shop-link" href="https://www.facebook.com/thecrookedtreecrafts/">F</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -29,7 +43,7 @@
 					<img src="./images/gallery-images/gallery2.jpg">
 				</div>
 				<div class="box">
-					<img src="./images/gallery-images/gallery3.jpg">					
+					<img src="./images/gallery-images/gallery5.jpg">					
 				</div>
 				<div class="box">
 					<img src="./images/gallery-images/gallery4.jpg">					
@@ -38,15 +52,31 @@
 		</section>
 		<!-- Contact! -->
 		<section>
-			<div class="container">
-				<div id="info">
-					<div id="store-hours">
+			<div id="store">
+				<div id="store-info" class="container">
+					<div class="info">
+						<div class="sign">
+							<p class="sign-text">View the complete gallery</p>
+						</div>
+						<div class="store-hours">
+							<p>Friday</p>
+							<p>11am - 4pm</p>
+						</div>
+						<div class="store-hours">
+							<p>Satruday</p>
+							<p>11am - 4pm</p>
+						</div>
+						<div class="store-hours">
+							<p>Sunday</p>
+							<p>11am - 2pm</p>
+						</div>
+							
 					</div>
-					<div id="contact">
+					<div class="info">
+						<div id="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47571.83891967109!2d-74.30536408121107!3d43.03794373045263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89def37fbea8a1a3%3A0x866eb80fdb6d039a!2s103%20Holly%20Lane%2C%20Gloversville%2C%20NY%2012078!5e0!3m2!1sen!2sus!4v1608003026000!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						</div>
 					</div>
-				</div>
-				<div id="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47571.83891967109!2d-74.30536408121107!3d43.03794373045263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89def37fbea8a1a3%3A0x866eb80fdb6d039a!2s103%20Holly%20Lane%2C%20Gloversville%2C%20NY%2012078!5e0!3m2!1sen!2sus!4v1608003026000!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 				</div>
 			</div>
 		</section>
