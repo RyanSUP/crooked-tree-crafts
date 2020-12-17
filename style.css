@@ -12,17 +12,17 @@ html {
 }
 
 body {
-	margin: 0;
+	background-image: url(./images/crafts-bg-light.png);
 	font-family: Garton;
 	font-size: 18px;
-	background-image: url(./images/crafts-bg-light.png);
+	margin: 0;
 }
 
 .container {
-	width: 100%;
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
 }
 
 #landing {
@@ -34,10 +34,8 @@ body {
 	width: 90%;
 }
 
-
-
-#info-text {
-	text-transform: capitalize;
+#heading {
+	margin: 5%;
 }
 
 h1 {
@@ -52,34 +50,33 @@ h1 {
 
 .button-outer-border {
 	border: 4px solid black;
-	padding: 1%;
-	width: 35%;
-	margin: 3%;
-	display: inline-block;
+    display: inline-block;
+    margin: 3%;
+    padding: .3em;
 }
 
 .button-inner-border {
-	padding: 5%;
 	border: 1px solid black;
 }
 
 #shop-link {
+    color: black;
 	font-family: Poor;
-	color: black;
-	font-size: 2em;
-	text-transform: uppercase;
+    font-size: 2em;
+    padding: .4em;
+    text-transform: uppercase;
 }
 
 /*Gallery CSS*/
 .box {
-	max-width: 100%;
-	margin-top: 10px;
 	margin-bottom: 10px;
+	margin-top: 10px;
+	max-width: 100%;
 }
 
 .box img {
-	width: 100%;
 	height: auto;
+	width: 100%;
 }
 
 
@@ -89,31 +86,33 @@ h1 {
 }
 
 .info {
-	width: 90%;
 	margin: 3% 0;
+	width: 90%;
 }
 
 .sign {
+	border-bottom: 4px solid black;
 	padding-bottom: 2%;
 	text-align: center;
-	border-bottom: 4px solid black;
 }
 
 .sign-text {
-	font-family: Poor;
-	color: black;
-	font-size: 1.3em;
-	text-transform: uppercase;
 	border-bottom: 1px solid black;
-	margin: 0%;
+	color: black;
+	font-family: Poor;
+	font-size: 1.3em;
 	letter-spacing: 2px;
+	margin: 0%;
+	text-transform: uppercase;
 }
 
 .store-hours {
-	display: flex;
-	font-size: 1.3em;
-	font-family: Poor;
-	justify-content: space-between;
+    display: flex;
+    font-size: 1.3em;
+    font-family: Poor;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 85%;
 }
 
 .store-hours p {
@@ -125,6 +124,7 @@ is hidden which gets the size result I want (100% screen) but the map text in th
 is being cut off. Moving on for now*/
 #map {
 	overflow: hidden;
+	text-align: center;
 }
 
 
@@ -133,29 +133,37 @@ is being cut off. Moving on for now*/
 		font-size: 12px;
 	}
 	.container {
-		justify-content: center;
 		align-items: center;
 		flex-wrap: nowrap;
+		justify-content: center;
 	}
 	#logo {
 		width: 40%;
 	}
-	#heading {
-		margin-top: 1.3em;
-	}
 	#gallery {
+		align-items: flex-start;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		align-items: flex-start;
 	}
 	.box {
 		max-width: 45%;
+	}
+	#hours {
+		width: 40%;
 	}
 	#store-info {
 		align-items: flex-start;
 	    flex-wrap: wrap;
 	}
 
+}
 
+@media screen and (min-width : 1000px) {
+	body {
+		font-size: 18px;
+	}
 
+	.info {
+		width: auto;
+	}
 }
